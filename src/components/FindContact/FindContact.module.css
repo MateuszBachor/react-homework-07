@@ -1,0 +1,10 @@
+
+.findDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 15px 20px;
+}
+.findInput{
+    width: 300px;
+    padding: 5px;
+}

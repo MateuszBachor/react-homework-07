@@ -1,0 +1,100 @@
+:global(body) {
+    display: flex;
+    justify-content: center;
+    background-color: #161538;
+
+ }
+  :global(#root){
+font-family: Arial, Helvetica, sans-serif;
+  }
+  .findContainer{
+    height: 335px;
+    overflow: auto;
+  }
+  .findContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .findContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .findContainer::-webkit-scrollbar-thumb {
+    background: rgb(77, 73, 73); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .findContainer::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  .smartphone {
+    position: relative;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    height: 640px;
+    background: white;
+  }
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .loadCnt{
+    display: flex;
+    justify-content: center;
+  }
